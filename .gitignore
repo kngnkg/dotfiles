@@ -1,0 +1,12 @@
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/install.sh
+!/.bashrc
+!/.zshrc
+
+!/README.md
+!.gitignore
+!.gitkeep
