@@ -1,3 +1,5 @@
+# for devcontainer
+
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- --yes
 
@@ -14,3 +16,5 @@ if [ -e ~/.zshrc ]; then
     mv ~/.zshrc ~/dotbackup/zshrc_$(date +%Y%m%d_%H%M%S)
 fi
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+
+source ~/.bashrc
