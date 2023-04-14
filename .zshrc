@@ -52,6 +52,7 @@ alias gitls='alias | grep git'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gf='git fetch'
@@ -60,6 +61,13 @@ alias gpo='git push origin'
 alias gs='git status'
 alias gsc='git switch -c'
 alias gsm='git switch main'
+
+# docker
+alias dcbuild='docker compose build'
+alias dcup='docker compose up'
+alias dcdown='docker compose down'
+alias dcps='docker compose ps'
+alias dclogs='docker compose logs'
 
 #
 # Init starship
