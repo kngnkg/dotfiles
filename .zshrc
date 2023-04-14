@@ -63,6 +63,7 @@ alias gsc='git switch -c'
 alias gsm='git switch main'
 
 # docker
+alias dockerls='alias | grep docker'
 alias dcbuild='docker compose build'
 alias dcup='docker compose up'
 alias dcdown='docker compose down'
