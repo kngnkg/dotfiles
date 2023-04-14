@@ -66,6 +66,8 @@ alias gsm='git switch main'
 alias dcbuild='docker compose build'
 alias dcup='docker compose up'
 alias dcdown='docker compose down'
+## Remove everything, including related resources
+alias dcdown-rma='docker-compose down --rmi all --volumes --remove-orphans'
 alias dcps='docker compose ps'
 alias dclogs='docker compose logs'
 
