@@ -1,4 +1,5 @@
 # utils
+## show history
 alias h='history'
 ## show path
 alias path='echo $PATH | tr ":" "\n"'
@@ -34,6 +35,7 @@ alias gsc='git switch -c'
 alias gsm='git switch main'
 
 # docker
+## show all docker aliases
 alias dockerls='alias | grep docker'
 alias dcbuild='docker compose build'
 alias dcup='docker compose up'
