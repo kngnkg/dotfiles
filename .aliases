@@ -1,6 +1,7 @@
 # utils
 ## show history
 alias h='history'
+alias hg='history | grep $1 --color=auto'
 ## show path
 alias path='echo $PATH | tr ":" "\n"'
 ## reload

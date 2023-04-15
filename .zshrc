@@ -18,8 +18,22 @@ path=(
   $path
 )
 
+#
+# History
+#
+
 # Do not keep the same command in the history
 setopt hist_ignore_all_dups
+
+# Do not save history command
+setopt hist_no_store
+
+# Set maximum number of saved history
+export HISTSIZE=1000
+export SAVEHIST=200000
+
+# Ignore specific commands
+export HISTORY_IGNORE="(pwd|ls|la|ll|cd|history)"
 
 # Load aliases
 if [ -f ~/.aliases ]; then

@@ -1,3 +1,17 @@
+#
+# History
+#
+
+# Set maximum number of saved history
+export HISTSIZE=1000
+export HISTFILESIZE=20000
+
+# Ignore duplicate commands
+export HISTCONTROL=ignoredups:erasedups
+
+# Ignore specific commands
+export HISTIGNORE="pwd:ls:la:ll:cd:history"
+
 # Load aliases
 if [ -f ~/.aliases ]; then
   source ~/.aliases
