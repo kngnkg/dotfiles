@@ -6,6 +6,8 @@
 !/install.sh
 !/.bashrc
 !/.zshrc
+!/.aliases
+!/.functions
 
 !/README.md
 !.gitignore

@@ -18,61 +18,18 @@ path=(
   $path
 )
 
-#
-# Options
-#
-
 # Do not keep the same command in the history
 setopt hist_ignore_all_dups
 
-#
-# Aliases
-#
+# Load aliases
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
+fi
 
-# util
-## show path
-alias path='echo $PATH | tr ":" "\n"'
-alias zshrc='source ~/.zshrc'
+# Load functions
+if [ -f ~/.functions ]; then
+  source ~/.functions
+fi
 
-# cd
-alias ..='cd ..'
-alias ..2='cd ../../'
-alias ..3='cd ../../../'
-alias cdp='cd ~/proj/'
-alias cddot='cd ~/dotfiles/'
-
-# ls
-alias ls='ls --color=auto'
-alias ll='ls -l --color=auto'
-alias la='ls -la --color=auto'
-
-# git
-## show all git aliases
-alias gitls='alias | grep git'
-alias ga='git add'
-alias gb='git branch'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gf='git fetch'
-alias gl='git log --all --graph --decorate --oneline'
-alias gpo='git push origin'
-alias gs='git status'
-alias gsc='git switch -c'
-alias gsm='git switch main'
-
-# docker
-alias dockerls='alias | grep docker'
-alias dcbuild='docker compose build'
-alias dcup='docker compose up'
-alias dcdown='docker compose down'
-## Remove everything, including related resources
-alias dcdown-rma='docker-compose down --rmi all --volumes --remove-orphans'
-alias dcps='docker compose ps'
-alias dclogs='docker compose logs'
-
-#
 # Init starship
-#
 eval "$(starship init zsh)"

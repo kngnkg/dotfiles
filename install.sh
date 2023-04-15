@@ -1,4 +1,18 @@
+#!/bin/bash
+
 # for devcontainer
+
+# Function to create symbolic links with backup
+create_symlink_with_backup() {
+    local src_file="$1"
+    local target_file="$2"
+    local backup_dir="$3"
+
+    if [ -e "${target_file}" ]; then
+        mv "${target_file}" "${backup_dir}/$(basename ${target_file})_$(date +%Y%m%d_%H%M%S)"
+    fi
+    ln -s "${src_file}" "${target_file}"
+}
 
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- --yes
@@ -7,14 +21,11 @@ curl -sS https://starship.rs/install.sh | sh -s -- --yes
 mkdir -p ~/dotbackup
 
 # Create symbolic links
-if [ -e ~/.bashrc ]; then
-    mv ~/.bashrc ~/dotbackup/bashrc_$(date +%Y%m%d_%H%M%S)
-fi
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-
-if [ -e ~/.zshrc ]; then
-    mv ~/.zshrc ~/dotbackup/zshrc_$(date +%Y%m%d_%H%M%S)
-fi
-ln -s ~/dotfiles/.zshrc ~/.zshrc
+create_symlink_with_backup ~/dotfiles/.bashrc ~/.bashrc ~/dotbackup
+create_symlink_with_backup ~/dotfiles/.zshrc ~/.zshrc ~/dotbackup
+create_symlink_with_backup ~/dotfiles/.aliases ~/.aliases ~/dotbackup
+create_symlink_with_backup ~/dotfiles/.functions ~/.functions ~/dotbackup
 
 source ~/.bashrc
+
+printf "\e[1;32m%s\e[m\n" "Dotfiles installation has successfully completed!"
