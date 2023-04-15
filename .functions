@@ -1,3 +1,11 @@
 function cdd() {
     cd "$@" && ls
 }
+
+function cdp {
+    cdd ~/proj/
+}
+
+function cddot {
+    cd ~/dotfiles/ && ls -a
+}
