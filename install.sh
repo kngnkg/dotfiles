@@ -20,11 +20,15 @@ curl -sS https://starship.rs/install.sh | sh -s -- --yes
 # Create backup directory
 mkdir -p ~/dotbackup
 
+# Create .config directory
+mkdir -p ~/.config
+
 # Create symbolic links
 create_symlink_with_backup ~/dotfiles/.bashrc ~/.bashrc ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.zshrc ~/.zshrc ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.aliases ~/.aliases ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.functions ~/.functions ~/dotbackup
+create_symlink_with_backup ~/dotfiles/starship/starship.toml ~/.config/starship.toml ~/dotbackup
 
 source ~/.bashrc
 
