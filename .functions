@@ -10,6 +10,10 @@ function cdp {
     cdd ~/proj/
 }
 
+function cdpt {
+    cdd ~/proj/tunetrail/
+}
+
 function cddot {
     cd ~/dotfiles/ && ls -a
 }
