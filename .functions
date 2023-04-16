@@ -15,39 +15,6 @@ function cddot {
 }
 
 #
-# Functions for git
-#
-
-## Delete all merged branches
-function delete_merged_git_branches() {
-    # defines branches that should not be deleted
-    excluded_branches=("main" "master" "develop" "dev" "release" "hotfix")
-
-    # get the list of merged branches
-    merged_branches=$(git branch --merged)
-
-    for branch in $merged_branches; do
-        # check if the branch is excluded
-        should_delete=true
-        for excluded_branch in "${excluded_branches[@]}"; do
-            if [[ "$branch" == "$excluded_branch" ]]; then
-                should_delete=false
-                break
-            fi
-        done
-
-        # delete the branch if it is not excluded
-        if [ "$should_delete" = true ]; then
-            echo "Deleting branch $branch"
-            git branch -d "$branch"
-        fi
-    done
-}
-
-alias gbdm=delete_merged_git_branches
-
-
-#
 # Functions for personal development
 #
 
