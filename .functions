@@ -23,6 +23,15 @@ function cdpt {
 }
 
 #
+# Functions for Go
+#
+
+## Generate test template
+function gen_go_test() {
+    gotests -w -all "$@"
+}
+
+#
 # Functions for personal development
 #
 
