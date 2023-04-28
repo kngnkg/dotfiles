@@ -28,6 +28,7 @@ create_symlink_with_backup ~/dotfiles/.bashrc ~/.bashrc ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.zshrc ~/.zshrc ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.aliases ~/.aliases ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.functions ~/.functions ~/dotbackup
+create_symlink_with_backup ~/dotfiles/homebrew/Brewfile ~/Brewfile ~/dotbackup
 create_symlink_with_backup ~/dotfiles/starship/starship.toml ~/.config/starship.toml ~/dotbackup
 
 source ~/.bashrc

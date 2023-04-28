@@ -8,6 +8,7 @@
 !/.zshrc
 !/.aliases
 !/.functions
+!/homebrew/
 !/starship/
 
 !/README.md
