@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# for devcontainer
-
 # Function to create symbolic links with backup
 create_symlink_with_backup() {
     local src_file="$1"
@@ -14,8 +12,10 @@ create_symlink_with_backup() {
     ln -s "${src_file}" "${target_file}"
 }
 
-# Install Starship
-curl -sS https://starship.rs/install.sh | sh -s -- --yes
+if [[ "${OSTYPE}" == "linux"* ]]; then
+    # Install Starship
+    curl -sS https://starship.rs/install.sh | sh -s -- --yes
+fi
 
 # Create backup directory
 mkdir -p ~/dotbackup
@@ -28,8 +28,11 @@ create_symlink_with_backup ~/dotfiles/.bashrc ~/.bashrc ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.zshrc ~/.zshrc ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.aliases ~/.aliases ~/dotbackup
 create_symlink_with_backup ~/dotfiles/.functions ~/.functions ~/dotbackup
-create_symlink_with_backup ~/dotfiles/homebrew/Brewfile ~/Brewfile ~/dotbackup
 create_symlink_with_backup ~/dotfiles/starship/starship.toml ~/.config/starship.toml ~/dotbackup
+
+if [[ "${OSTYPE}" == "darwin"* ]]; then
+    create_symlink_with_backup ~/dotfiles/homebrew/Brewfile ~/Brewfile ~/dotbackup
+fi
 
 source ~/.bashrc
 
