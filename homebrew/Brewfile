@@ -1,7 +1,10 @@
+# tap
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+
+# formulae
 # Distributed revision control system
 brew "git"
 # Lightweight and flexible command-line JSON processor
@@ -12,6 +15,8 @@ brew "mas"
 brew "pwgen"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+
+# casks
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Web browser focusing on privacy
@@ -50,9 +55,10 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Be Focused", id: 973134470
+
+# mas
+mas "Be Focused Pro", id: 961632517
 mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Spark", id: 1176895641
 mas "Twitter", id: 1482454543
-mas "令和4年分　年末調整控除申告書作成用ソフトウェア", id: 1529230397
