@@ -26,6 +26,8 @@ cask "deepl"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Collaborative team software
+cask "figma"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Web browser
