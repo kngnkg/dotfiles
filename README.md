@@ -48,9 +48,9 @@ Linuxはコンテナとして使うことを想定しているので、`./instal
 
 非対応
 
-## 4: `~/.gitconfig`の設定
+## 4: 設定ファイルの編集
 
-`~/.gitconfig`はdotfilesに含めていないので、適宜設定する。
+`~/.gitconfig`や`~/.aws/`以下のファイルなどはdotfilesに含めていないので、適宜設定する。
 
 ## 5: Dev Containerの設定
 
