@@ -5,19 +5,18 @@
 function cdd() {
     cd "$@" && ls
 }
-
 function cddot {
     cd ~/dotfiles/ && ls -a
 }
-
 function cddoc {
     cdd ~/Documents/
 }
-
+function cddl {
+    cdd ~/Downloads/
+}
 function cdp {
     cdd ~/proj/
 }
-
 function cdpt {
     cdd ~/proj/tunetrail/
 }
