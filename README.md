@@ -9,9 +9,15 @@ git clone https://github.com/kwtryo/dotfiles.git
 
 ## 2: インストール
 
+### MacOS or Linux
+
 ```
 ./install.sh
 ```
+
+### Windows
+
+非対応
 
 ## 3-A: Mac
 
@@ -34,7 +40,13 @@ cd ~/
 brew bundle
 ```
 
-## 3-B: Windows
+## 3-B: Linux
+
+Linuxはコンテナとして使うことを想定しているので、`./install.sh`の実行後は特別な作業は不要。`4`以降の手順も不要。
+
+## 3-C: Windows
+
+非対応
 
 ## 4: `~/.gitconfig`の設定
 
