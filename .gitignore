@@ -4,10 +4,12 @@
 
 ### not ignore ###
 !/install.sh
+!/install.Windows.ps1
 !/.bashrc
 !/.zshrc
 !/.aliases
 !/.functions
+!/powershell/
 !/homebrew/
 !/starship/
 

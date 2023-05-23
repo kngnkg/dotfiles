@@ -2,22 +2,33 @@
 
 ## 1: clone
 
-```
-cd ~/
-git clone https://github.com/kwtryo/dotfiles.git
+```bash
+cd ~/ && git clone https://github.com/kwtryo/dotfiles.git
 ```
 
 ## 2: インストール
 
 ### MacOS or Linux
 
-```
+```bash
 ./install.sh
 ```
 
 ### Windows
 
-非対応
+#### 管理者権限でPowerShellを起動する
+
+#### ps1ファイルの実行権限を付与する
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+
+#### インストール
+
+```powershell
+.\Install.Windows.ps1
+```
 
 ## 3-A: Mac
 
@@ -25,7 +36,7 @@ git clone https://github.com/kwtryo/dotfiles.git
 
 コマンドが変わっている可能性があるので[公式](https://brew.sh/index_ja)を確認する。
 
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
@@ -35,9 +46,8 @@ git clone https://github.com/kwtryo/dotfiles.git
 
 ### `~/Brewfile`から一括インストール
 
-```
-cd ~/
-brew bundle
+```bash
+cd ~/ && brew bundle
 ```
 
 ## 3-B: Linux
@@ -46,7 +56,7 @@ Linuxはコンテナとして使うことを想定しているので、`./instal
 
 ## 3-C: Windows
 
-非対応
+考え中
 
 ## 4: 設定ファイルの編集
 
