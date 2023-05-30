@@ -29,7 +29,6 @@ esac
 
 # git
 alias g='git'
-alias gs='git status'
 
 # docker
 ## show all docker aliases

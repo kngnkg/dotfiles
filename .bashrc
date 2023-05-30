@@ -1,3 +1,6 @@
+# change keybindings to vi mode
+set -o vi
+
 #
 # History
 #
