@@ -48,6 +48,8 @@ cask "microsoft-office"
 cask "microsoft-teams"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Team communication and collaboration software
@@ -63,3 +65,14 @@ mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Spark", id: 1176895641
 mas "Twitter", id: 1482454543
+vscode "bierner.markdown-mermaid"
+vscode "eamodio.gitlens"
+vscode "GitHub.copilot"
+vscode "hashicorp.terraform"
+vscode "hediet.vscode-drawio"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "oderwat.indent-rainbow"
+vscode "PKief.material-icon-theme"
+vscode "yzane.markdown-pdf"
+vscode "yzhang.markdown-all-in-one"
