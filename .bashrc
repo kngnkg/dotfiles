@@ -23,7 +23,11 @@ if [ -f ~/.functions ]; then
 fi
 
 # git completion
-source /usr/share/bash-completion/completions/git
+if [ -f /usr/share/bash-completion/completions/git ]; then
+  source /usr/share/bash-completion/completions/git
+  ## Allow aliases to be completed as well.
+  __git_complete g __git_main
+fi
 
 # Init starship
 eval "$(starship init bash)"
