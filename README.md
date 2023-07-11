@@ -3,7 +3,7 @@
 ## 1: clone
 
 ```bash
-cd ~/ && git clone https://github.com/kwtryo/dotfiles.git
+cd ~/ && git clone https://github.com/kngnkg/dotfiles.git
 ```
 
 ## 2: インストール
@@ -69,7 +69,7 @@ Linuxはコンテナとして使うことを想定しているので、`./instal
 ```json
 {
     // ...
-    "dotfiles.repository": "kwtryo/dotfiles",
+    "dotfiles.repository": "kngnkg/dotfiles",
     "dotfiles.installCommand": "~/dotfiles/install.sh",
     // ...
 }
