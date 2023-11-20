@@ -53,8 +53,6 @@ cask "font-hack-nerd-font"
 cask "google-chrome"
 # Japanese input software
 cask "google-japanese-ime"
-# Interface for reading and syncing eBooks
-cask "kindle"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Office suite
@@ -84,6 +82,7 @@ cask "warp"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Be Focused Pro", id: 961632517
+mas "Kindle", id: 302584613
 mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Spark", id: 1176895641
