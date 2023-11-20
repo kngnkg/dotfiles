@@ -31,15 +31,9 @@ esac
 alias g='git'
 
 # docker
-## show all docker aliases
-alias dockerls='alias | grep docker'
-alias dcbuild='docker compose build'
-alias dcup='docker compose up'
-alias dcdown='docker compose down'
+alias dc='docker compose'
 ## Remove everything, including related resources
 alias dcdown-rma='docker-compose down --rmi all --volumes --remove-orphans'
-alias dcps='docker compose ps'
-alias dclogs='docker compose logs'
-## Start PlantUML Server
-## https://github.com/plantuml/plantuml-server
-alias drun-plantuml='docker run -d -p 58080:8080 plantuml/plantuml-server:jetty'
+
+# terraform
+alias tf='terraform'
