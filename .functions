@@ -8,20 +8,24 @@ function cdd() {
 function cddot {
     cd ~/dotfiles/ && ls -a
 }
+# iCloud Drive
+function cdic {
+   cdd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs
+}
+function cdsc {
+    cdd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/scripts/
+}
 function cddoc {
     cdd ~/Documents/
 }
 function cddl {
     cdd ~/Downloads/
 }
-function cdsc {
-    cdd ~/scripts/
-}
 function cdp {
     cdd ~/proj/
 }
-function cdpt {
-    cdd ~/proj/tunetrail/
+function cdpf {
+    cdd ~/proj/foderee/
 }
 
 #
