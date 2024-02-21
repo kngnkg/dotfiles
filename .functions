@@ -21,11 +21,11 @@ function cddoc {
 function cddl {
     cdd ~/Downloads/
 }
-function cdp {
-    cdd ~/proj/
+function cdr {
+    cdd ~/repo/
 }
-function cdpf {
-    cdd ~/proj/foderee/
+function cdrf {
+    cdd ~/repo/foderee/
 }
 
 #
