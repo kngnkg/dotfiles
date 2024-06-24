@@ -1,8 +1,6 @@
 tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
 # Text processing system for reStructuredText
@@ -23,6 +21,8 @@ brew "jq"
 brew "mas"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Password generator
@@ -35,6 +35,8 @@ brew "terraform"
 brew "tree"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Memory training application
+cask "anki"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Tool to list all active shortcuts of the current application
@@ -49,7 +51,6 @@ cask "discord"
 cask "docker"
 # Collaborative team software
 cask "figma"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Web browser
 cask "google-chrome"
