@@ -1,6 +1,7 @@
 tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "k1low/tap"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
 # Text processing system for reStructuredText
@@ -64,6 +65,8 @@ cask "microsoft-office"
 cask "microsoft-teams"
 # App to write, plan, collaborate, and get organised
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Collaboration platform for API development
 cask "postman"
 # Control your tools with a few keystrokes
