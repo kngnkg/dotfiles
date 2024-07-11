@@ -36,12 +36,12 @@ brew "terraform"
 brew "tree"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Photo storage and sharing service
+cask "amazon-photos"
 # Memory training application
 cask "anki"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Tool to list all active shortcuts of the current application
-cask "cheatsheet"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
 # Trains AIs to understand and translate texts
@@ -55,6 +55,8 @@ cask "figma"
 cask "font-hack-nerd-font"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Japanese input software
 cask "google-japanese-ime"
 # Provides updates to various Microsoft products
