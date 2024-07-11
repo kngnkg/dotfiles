@@ -12,7 +12,7 @@ function cddot {
 function cdic {
    cdd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs
 }
-function cdsc {
+function cdicsc {
     cdd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/scripts/
 }
 function cddoc {
@@ -25,5 +25,5 @@ function cdr {
     cdd ~/repo/
 }
 function cdrf {
-    cdd ~/repo/foderee/
+    cdd ~/repo/foderee-new/
 }

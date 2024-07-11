@@ -15,8 +15,7 @@ path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
-  $HOME/scripts(N)
-  $(go env GOPATH)/bin(N)
+  # $(go env GOPATH)/bin(N)
   $path
 )
 
