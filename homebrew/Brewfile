@@ -34,31 +34,29 @@ brew "starship"
 brew "terraform"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Photo storage and sharing service
-cask "amazon-photos"
 # Memory training application
 cask "anki"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Multi-platform client-side cloud file encryption tool
-cask "cryptomator"
-# Trains AIs to understand and translate texts
+# AI-powered translator
 cask "deepl"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Collaborative team software
 cask "figma"
 cask "font-hack-nerd-font"
 # Web browser
 cask "google-chrome"
-# Client for the Google Drive storage service
-cask "google-drive"
 # Japanese input software
 cask "google-japanese-ime"
+# Free and open-source media player
+cask "iina"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Office suite
@@ -67,8 +65,6 @@ cask "microsoft-office"
 cask "microsoft-teams"
 # App to write, plan, collaborate, and get organised
 cask "notion"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
 # Collaboration platform for API development
 cask "postman"
 # Control your tools with a few keystrokes
@@ -77,6 +73,8 @@ cask "raycast"
 cask "session-manager-plugin"
 # Music streaming service
 cask "spotify"
+# VPN client for secure internet access and private browsing
+cask "surfshark"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Unpacks archive files
@@ -101,6 +99,7 @@ vscode "github.copilot-chat"
 vscode "golang.go"
 vscode "hashicorp.terraform"
 vscode "hediet.vscode-drawio"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
 vscode "oderwat.indent-rainbow"
@@ -110,3 +109,5 @@ vscode "sdras.night-owl"
 vscode "yzane.markdown-pdf"
 vscode "yzhang.markdown-all-in-one"
 vscode "zxh404.vscode-proto3"
+go "golang.org/x/tools/gopls"
+go "honnef.co/go/tools/cmd/staticcheck"
